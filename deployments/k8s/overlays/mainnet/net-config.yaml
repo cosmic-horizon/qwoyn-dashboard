@@ -3,18 +3,18 @@ data:
   config.json: |-
     {
        "Mainnet": {
-         "bcApiURL": "https://lcd.c4e.io",
-         "bcRpcURL": "https://rpc.c4e.io",
+         "bcApiURL": "http://137.220.37.9:1317/",
+         "bcRpcURL": "http://137.220.37.9:26657/",
          "hasuraURL": "https://hasura.c4e.io/v1/graphql",
          "keybaseURL": "https://keybase.io",
-         "stakingPageURL": "https://wallet.c4e.io/staking",
-         "addressPrefix": "c4e",
-         "stakingDenom": "uc4e",
+         "stakingPageURL": "https://wallet.cosmic-horizon.com/staking",
+         "addressPrefix": "qwoyn",
+         "stakingDenom": "uqwoyn",
          "strategicPoolAddress": "c4e1hcfjejmxzl8d95xka5j8cjegmf32u2lee3q422",
          "airdropPoolAddress": "c4e1dutmadwfernuzmzk8ndtfah254yhrnv34y68ts",
-         "chainId": "perun-1",
-         "networkName": "Mainnet(perun-1)",
-         "keplrNetworkName": "Chain4Energy",
+         "chainId": "higgs-boson-1",
+         "networkName": "Mainnet(higgs-boson-1)",
+         "keplrNetworkName": "QwoynStudios-Testnet",
          "operationGas": {
            "vote": 72000,
            "delegate": 300000,
@@ -24,8 +24,8 @@ data:
          },
          "viewDenoms": [
            {
-             "denom": "uc4e",
-             "viewDenom": "C4E",
+             "denom": "uqwoyn",
+             "viewDenom": "QWOYN",
              "coinDecimals": 6
            }
          ],
@@ -40,26 +40,26 @@ data:
          "validatorsDataRefreshTimeout":600000,
          "accountDataRefreshTimeout": 90000,
          "proposalsPageLimit": 50,
-         "explorerUrl": "https://explorer.c4e.io",
-         "explorerAccount": "https://explorer.c4e.io/accounts/",
-         "explorerTx": "https://explorer.c4e.io/transactions/",
+         "explorerUrl": "https://skynetexplorers.com/qwoyn-studios",
+         "explorerAccount": "https://skynetexplorers.com/qwoyn-studios/accounts/",
+         "explorerTx": "https://skynetexplorers.com/qwoyn-studios/transactions/",
          "isMainNetwork": true,
          "airdropBaseURL": "https://airdrop.c4e.io/",
          "proposalVotingRefreshTimeout": "30000"
        },
        "Testnet": {
-         "bcApiURL": "https://lcd-testnet.c4e.io",
-         "bcRpcURL": "https://rpc-testnet.c4e.io",
+         "bcApiURL": "http://137.220.37.9:1317/",
+         "bcRpcURL": "http://137.220.37.9:26657/",
          "hasuraURL": "https://hasura-testnet.c4e.io/v1/graphql",
          "keybaseURL": "https://keybase.io",
-         "stakingPageURL": "https://wallet-testnet.c4e.io/staking",
-         "addressPrefix": "c4e",
-         "stakingDenom": "uc4e",
+         "stakingPageURL": "https://wallet.cosmic-horizon.com/staking",
+         "addressPrefix": "qwoyn",
+         "stakingDenom": "uqwoyn",
          "strategicPoolAddress": "c4e1hcfjejmxzl8d95xka5j8cjegmf32u2lee3q422",
          "airdropPoolAddress": "c4e1dutmadwfernuzmzk8ndtfah254yhrnv34y68ts",
-         "chainId": "veles-1",
-         "networkName": "Testnet(veles-1)",
-         "keplrNetworkName": "Chain4Energy Testnet",
+         "chainId": "higgs-boson-1",
+         "networkName": "Testnet(higgs-boson-1)",
+         "keplrNetworkName": "QwoynStudios Testnet",
          "operationGas": {
            "vote": 72000,
            "delegate": 300000,
@@ -69,8 +69,8 @@ data:
          },
          "viewDenoms": [
            {
-             "denom": "uc4e",
-             "viewDenom": "C4E",
+             "denom": "uqwoyn",
+             "viewDenom": "QWOYN",
              "coinDecimals": 6
            }
          ],
