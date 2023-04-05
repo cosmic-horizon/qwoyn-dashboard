@@ -1,7 +1,7 @@
 {
   "Mainnet": {
-    "bcApiURL": "https://lcd.c4e.io",
-    "bcRpcURL": "https://mainnet.regen.network:26657",
+    "bcApiURL": "http://mainnet.regen.network:1317",
+    "bcRpcURL": "http://mainnet.regen.network:26657",
     "hasuraURL": "https://hasura.c4e.io/v1/graphql",
     "keybaseURL": "https://keybase.io",
     "stakingPageURL": "https://wallet.c4e.io/staking",
