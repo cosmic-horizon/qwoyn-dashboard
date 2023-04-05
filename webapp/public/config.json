@@ -1,17 +1,17 @@
 {
   "Mainnet": {
     "bcApiURL": "https://lcd.c4e.io",
-    "bcRpcURL": "https://rpc.c4e.io",
+    "bcRpcURL": "https://mainnet.regen.network:26657",
     "hasuraURL": "https://hasura.c4e.io/v1/graphql",
     "keybaseURL": "https://keybase.io",
     "stakingPageURL": "https://wallet.c4e.io/staking",
-    "addressPrefix": "c4e",
-    "stakingDenom": "uc4e",
+    "addressPrefix": "regen",
+    "stakingDenom": "uregen",
     "strategicPoolAddress": "c4e1hcfjejmxzl8d95xka5j8cjegmf32u2lee3q422",
     "airdropPoolAddress": "c4e1dutmadwfernuzmzk8ndtfah254yhrnv34y68ts",
-    "chainId": "perun-1",
-    "networkName": "Mainnet(C4E)",
-    "keplrNetworkName": "Chain4Energy",
+    "chainId": "regen-1",
+    "networkName": "Mainnet(REGEN)",
+    "keplrNetworkName": "Regen",
     "queries": {
       "STAKING_POOL_URL": "/cosmos/staking/v1beta1/pool",
       "TOTAL_SUPPLY_URL": "/cosmos/bank/v1beta1/supply/{denom}",
@@ -41,8 +41,8 @@
     },
     "viewDenoms": [
       {
-        "denom": "uc4e",
-        "viewDenom": "C4E",
+        "denom": "uregen",
+        "viewDenom": "REGEN",
         "coinDecimals": 6
       }
     ],
