@@ -1,7 +1,7 @@
 {
   "Mainnet": {
-    "bcApiURL": "https://testnet.qwoyn.studio:1317/",
-    "bcRpcURL": "http://testnet.qwoyn.studio:26657/",
+    "bcApiURL": "https://higgs-boson.qwoyn.studio:1317/",
+    "bcRpcURL": "http://higgs-boson.qwoyn.studio:26657/",
     "hasuraURL": "https://hasura.c4e.io/v1/graphql",
     "keybaseURL": "https://keybase.io",
     "stakingPageURL": "https://dashboard.qwoyn.studio/staking",
