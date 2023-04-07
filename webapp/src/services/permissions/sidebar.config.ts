@@ -10,7 +10,7 @@ export class SidebarConfig{
     this.config.set(PagesEnum.DASHBOARD, this.createDashboard());
     this.config.set(PagesEnum.STAKING, this.createStaking());
     this.config.set(PagesEnum.GOVERNANCE, this.createGovernance());
-    this.config.set(PagesEnum.AirDrop, this.createAirDrop());
+    //this.config.set(PagesEnum.AirDrop, this.createAirDrop());
   }
 
   getConfigForPage(page: PagesEnum): SidebarElement | undefined{
@@ -43,6 +43,15 @@ export class SidebarConfig{
     retVal.icon = new SidebarIcon('Landmark');
     return retVal;
   }
+
+  /*private createAirDrop(): SidebarElement{
+    const retVal = new SidebarElement();
+    retVal.id = 3;
+    retVal.href = '/airdrop';
+    retVal.title = 'Airdrop';
+    retVal.icon = new SidebarIcon('Award');
+    return retVal;
+  }*/
 
 }
 
