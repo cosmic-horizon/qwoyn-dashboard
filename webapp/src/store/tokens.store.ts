@@ -136,17 +136,6 @@ export const useTokensStore = defineStore({
         }
       });
     },
-    async fetchDistributorParams(lockscreen = true) {
-      await apiFactory.tokensApi().fetchShareParameter(lockscreen).then(response => {
-        if (response.isSuccess() && response.data !== undefined) {
-          this.shareParameter = response.data;
-        } else {
-          const message = 'Error fetching distributorParams data';
-          logger.logToConsole(LogLevel.ERROR, message);
-          toast.error(message);
-        }
-      });
-    },
     async fetchInflation(lockscreen = true) {
       await apiFactory.tokensApi().fetchInflation(lockscreen).then(response => {
         if (response.isSuccess() && response.data !== undefined) {

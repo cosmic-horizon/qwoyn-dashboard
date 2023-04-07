@@ -57,9 +57,4 @@ export class TokensApi extends BaseApi {
       mapData, lockscreen, null, 'fetchCommunityPoolByDenom - ');
   }
 
-  public async fetchShareParameter(lockscreen: boolean): Promise<RequestResponse<number, ErrorData<BlockchainApiErrorData>>> {
-    const mapData = (bcData: DistributorParamsResponse | undefined) => {return mapDistributorParameters(bcData?.params);};
-    return  await this.axiosGetBlockchainApiCall(this.DISTRIBUTOR_PARAMS_URL,
-      mapData, lockscreen, null, 'fetchDistributorParams - ');
-  }
 }

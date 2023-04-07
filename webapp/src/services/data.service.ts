@@ -68,7 +68,6 @@ class DataService extends LoggedService {
       useTokensStore().fetchTotalSupply(lockScreen),
       useTokensStore().fetchStakingPool(lockScreen),
       useTokensStore().fetchInflation(lockScreen),
-      useTokensStore().fetchDistributorParams(lockScreen),
       useValidatorsStore().fetchValidators(lockScreen),
       useValidatorsStore().fetchStackingParams(lockScreen),
       useProposalsStore().fetchTallyParams(),
