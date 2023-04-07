@@ -351,7 +351,8 @@
     "GOVERNANCEDETAILS": "Proposal",
     "FAQ": "FAQ",
     "PRIVACY_POLICY": "Privacy policy",
-    "TERMS_CONDITIONS": "Terms & conditions"
+    "TERMS_CONDITIONS": "Terms & conditions",
+    "AIRDROP": "Airdrop"
   },
   "TOAST": {
     "SUCCESS": {
@@ -370,6 +371,14 @@
         "CODE": "Code"
       }
     }
+  },
+  "AIRDROP": {
+    "CONNECT": "Connect with Keplr",
+    "OR": "or",
+    "CONNECT_CHAINS": "Connect with COSM/C4E account",
+    "C4E_HELP": "Provide C4E or COSMOS address",
+    "COSMOS_HELP": "Import COSMOS address",
+    "CHECK": "Check"
   },
   "COPY": {
     "ADDRESS": "Address has been copied to clipboard",
