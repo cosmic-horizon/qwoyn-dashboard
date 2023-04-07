@@ -1,6 +1,6 @@
 {
   "Mainnet": {
-    "bcApiURL": "https://higgs-boson.qwoyn.studio:1317/",
+    "bcApiURL": "https://lcd.higgs-boson.qwoyn.studio:1317/",
     "bcRpcURL": "http://higgs-boson.qwoyn.studio:26657/",
     "hasuraURL": "https://hasura.c4e.io/v1/graphql",
     "keybaseURL": "https://keybase.io",
