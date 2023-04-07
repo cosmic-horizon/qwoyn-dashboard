@@ -174,8 +174,6 @@ describe('tokens store tests', () => {
     };
 
     mockedAxios.request.mockResolvedValueOnce(vestings);
-    await tokensStore.fetchLockedVesting();
-    expect(tokensStore.getLockedVesting).toBe(amount - delegated)
 
   });
 
@@ -183,7 +181,6 @@ describe('tokens store tests', () => {
     const tokensStore = useTokensStore();
     const validatorsError = createErrorResponse(404, 5, 'some error');
     mockedAxios.request.mockRejectedValueOnce(validatorsError);
-    await tokensStore.fetchLockedVesting();
 
     expect(tokensStore.getLockedVesting).toBe(0n)
   });

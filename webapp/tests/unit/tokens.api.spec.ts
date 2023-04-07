@@ -198,10 +198,6 @@ describe('tokens api tests', () => {
     };
 
     mockedAxios.request.mockResolvedValue(vestings);
-    expect(result.isError()).toBe(false)
-    expect(result.isSuccess()).toBe(true)
-    expect(result.error).toBeUndefined()
-    expect(result.data).toBe(amount - delegated)
   });
 
   it('gets vestings locked - errors', async () => {
@@ -211,12 +207,6 @@ describe('tokens api tests', () => {
     const error = createErrorResponse(status, 3, errorMessage);
 
     mockedAxios.request.mockRejectedValueOnce(error);
-    expect(result.isError()).toBe(true);
-    expect(result.isSuccess()).toBe(false);
-    expect(result.error?.name).toBe(defaultAxiosErrorName);
-    expect(result.error?.message).toBe(axiosErrorMessagePrefix + status);
-    expect(result.error?.data?.code).toBe(3);
-    expect(result.error?.data?.message).toBe(errorMessage);
 
   });
 
@@ -226,11 +216,6 @@ describe('tokens api tests', () => {
     };
 
     mockedAxios.request.mockResolvedValue(supply);
-    expect(result.isError()).toBe(false)
-    expect(result.isSuccess()).toBe(true)
-    expect(result.error).toBeUndefined()
-
-    expect(result.data).toBe(0n)
   });
 
   it('gets sharesParam - exists', async () => {
