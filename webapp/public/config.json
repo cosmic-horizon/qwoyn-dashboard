@@ -1,10 +1,10 @@
 {
   "Mainnet": {
-    "bcApiURL": "http://137.220.37.9:1317/",
-    "bcRpcURL": "http://137.220.37.9:26657/",
+    "bcApiURL": "https://testnet.qwoyn.studio:1317/",
+    "bcRpcURL": "http://testnet.qwoyn.studio:26657/",
     "hasuraURL": "https://hasura.c4e.io/v1/graphql",
     "keybaseURL": "https://keybase.io",
-    "stakingPageURL": "https://wallet.c4e.io/staking",
+    "stakingPageURL": "https://dashboard.qwoyn.studio/staking",
     "addressPrefix": "qwoyn",
     "stakingDenom": "uqwoyn",
     "strategicPoolAddress": "qwoyn1wpgehcm8zl0n9znla6ttjmwrxnkn6ccmzwcuu3",
