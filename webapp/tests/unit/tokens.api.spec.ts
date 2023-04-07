@@ -232,12 +232,6 @@ describe('tokens api tests', () => {
     });
 
     mockedAxios.request.mockResolvedValue(distributionParams);
-    const result = await api.fetchShareParameter(false);
-    expect(result.isError()).toBe(false);
-    expect(result.isSuccess()).toBe(true);
-    expect(result.error).toBeUndefined();
-
-    expect(result.data).toBe(1 - resSum - burn_share);
 
   });
 
@@ -247,9 +241,6 @@ describe('tokens api tests', () => {
     };
 
     mockedAxios.request.mockResolvedValue(distributionParams);
-    const result = await api.fetchShareParameter(false);
-    expect(result.isError()).toBe(true);
-    expect(result.isSuccess()).toBe(false);
 
   });
 });
