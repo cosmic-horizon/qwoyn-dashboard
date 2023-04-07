@@ -6,7 +6,7 @@ module.exports = defineConfig({
   pages:{
     index:{
       entry: 'src/main.ts',
-      title: 'Chain4Energy | C4E wallet'
+      title: 'Qwoyn Network Dashboard'
     },
   },
   transpileDependencies: true,
