@@ -13,10 +13,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: "",
-    redirect: '/dashboard',
+    redirect: '/',
   },
   {
-    path: '/dashboard',
+    path: '/',
     name: 'Dashboard',
     component: DashboardView,
     meta: {
