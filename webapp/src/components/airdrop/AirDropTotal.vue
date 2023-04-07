@@ -26,7 +26,7 @@
           <h4>Total Fairdrop Allocation</h4>
           <div class="airDropTotal__totalData-item">
             <div class="airDropTotal__totalData-image">
-              <Image class="navbar-brand" :src="require('@/assets/qwoyn-logo.svg')" alt="Image" height="58"/>
+              <Image class="navbar-brand" :src="require('@/assets/qwoyn-logo.svg')" alt="Image" height="69"/>
             </div>
             <CoinAmount
               class="airDropTotal__totalData-amount"

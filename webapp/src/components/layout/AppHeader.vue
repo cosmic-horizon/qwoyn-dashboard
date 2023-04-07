@@ -45,7 +45,7 @@
 
       <div class="container-fluid d-flex justify-content-between">
         <span class="d-flex" style="align-items: center">
-        <Image class="navbar-brand" :src="require('../../assets/qwoyn-logo.svg')" alt="Image" height="58"/>
+        <Image class="navbar-brand" :src="require('../../assets/qwoyn-logo.svg')" alt="Image" height="69"/>
         <div class="bottom-container">
         <h2>{{ $t("SECTION_TITLES." + currentRouteName?.toUpperCase()) }}</h2>
           <breadcrumbs-component/>
@@ -79,7 +79,7 @@
     </div>
     <div class="mobile-menu" :class="dropdown ? 'mobile-menu-open' : ''">
       <div class="header">
-        <Image class="navbar-brand" :src="require('../../assets/qwoyn-logo.svg')" alt="Image" height="58"/>
+        <Image class="navbar-brand" :src="require('../../assets/qwoyn-logo.svg')" alt="Image" height="69"/>
         <div @click="toggleDropdown">
           <Icon name="X"/>
         </div>
