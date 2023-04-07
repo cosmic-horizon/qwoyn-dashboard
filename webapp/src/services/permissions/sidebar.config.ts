@@ -44,15 +44,6 @@ export class SidebarConfig{
     return retVal;
   }
 
-  private createAirDrop(): SidebarElement{
-    const retVal = new SidebarElement();
-    retVal.id = 3;
-    retVal.href = '/airdrop';
-    retVal.title = 'Airdrop';
-    retVal.icon = new SidebarIcon('Award');
-    return retVal;
-  }
-
 }
 
 export class SidebarElement {

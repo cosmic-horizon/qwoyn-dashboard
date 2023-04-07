@@ -1,8 +1,8 @@
 {
-  "TITLE": "Chain4Energy {'|'} C4E wallet{addInfo}",
+  "TITLE": "Qwoyn Network {'|'} Qwoyn Dashboard{addInfo}",
   "CONNECT" : {
     "WELCOME": "Welcome",
-    "WELCOME_MESSAGE": "To the blockchain securing the decentralized energy market",
+    "WELCOME_MESSAGE": "To the next phase of gaming",
     "CONNECT": "Connect",
     "CONNECT_ADDRESS": "Connect with address",
     "CONNECT_KEPLR": "Connect with Keplr wallet",
@@ -125,7 +125,7 @@
   },
   "TERMS_CONDITIONS_VIEW": {
     "TITLES": {
-      "terms_conditions": "C4E Wallet - Terms and Conditions",
+      "terms_conditions": "Qwoyn Dashboard - Terms and Conditions",
       "rights_obligations": "Rights and obligations",
       "product": "Product",
       "obligations_warranties": "Primary obligations and warranties",
