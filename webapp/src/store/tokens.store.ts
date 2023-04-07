@@ -158,16 +158,6 @@ export const useTokensStore = defineStore({
         }
       });
     },
-    fetchLockedVesting: async function (lockscreen = true) {
-      await apiFactory.tokensApi().fetchVestingLockedNotDelegated(lockscreen).then(response => {
-        if (response.isSuccess() && response.data !== undefined) {
-          this.lockedVesting = response.data;
-        } else {
-          const message = 'Error fetching locked vesting';
-          logger.logToConsole(LogLevel.ERROR, message);
-        }
-      });
-    },
     clear() {
       const denom = useConfigurationStore().config.stakingDenom;
       const emptyCoin = new Coin(0n, denom);
