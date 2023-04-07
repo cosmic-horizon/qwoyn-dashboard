@@ -87,7 +87,7 @@
               <span>{{ $t('COMMON.INPUT.AMOUNT') }}</span>
               <div class="validationPopup__btn">
                 <button type="button" :disabled="!canModify" @click="transferAllAmount">Max</button>
-                <p>C4E</p>
+                <p>QWOYN</p>
               </div>
 
               <!--              <p style="text-align: left">-->
@@ -99,7 +99,7 @@
               <transition name="slide-fade">
                 <div v-if="showReserveCheckbox" class="validationPopup__reservationReq">
                   <input type="checkbox" v-model="reserveCoins"/>
-                  <p>Reserve {{ fee + reservedCoins }} C4E for future transactions</p>
+                  <p>Reserve {{ fee + reservedCoins }} QWOYN for future transactions</p>
                 </div>
               </transition>
 
