@@ -10,7 +10,7 @@
     "strategicPoolAddress": "qwoyn1wpgehcm8zl0n9znla6ttjmwrxnkn6ccmzwcuu3",
     "airdropPoolAddress": "qwoyn1wpgehcm8zl0n9znla6ttjmwrxnkn6ccmzwcuu3",
     "chainId": "higgs-boson-3",
-    "networkName": "Mainnet(Higgs-Boson)",
+    "networkName": "Higgs-Boson(Testnet)",
     "keplrNetworkName": "Qwoyn",
     "queries": {
       "STAKING_POOL_URL": "/cosmos/staking/v1beta1/pool",
