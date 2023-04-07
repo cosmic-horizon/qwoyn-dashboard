@@ -21,22 +21,22 @@
           <Icon name="ArrowRight" />
           <CoinAmount :amount="tokensStore.getStrategicReversePool" :show-denom="true" style="font-weight: bold"/>
         </div>
-        <div class="legend-item">
-          <div class="dot" style="background: #FFF1A9"></div>
-          <div> {{ $t("DASHBOARD_VIEW.AIRDROP") }}</div>
-          <Icon name="ArrowRight" />
-          <CoinAmount :amount="tokensStore.getAirdropPool" :show-denom="true" style="font-weight: bold"/>
-        </div>
-    </div>
-    </div>
-    <div style=" height: 100%; width:100% ;max-width:350px;margin-left: auto;
-    margin-right: auto " ref="poolsRef">
-      <ShadowedSvgChart id="poolschartdiv" >
-        <v-chart :option="option" autoresize />
-        <C4EIcon icon="c4e-circle" class="inside" :size="poolsRef.clientWidth/3"/>
-      </ShadowedSvgChart>
-    </div>
+      <!--<div class="legend-item">
+        <div class="dot" style="background: #FFF1A9"></div>
+        <div> {{ $t("DASHBOARD_VIEW.AIRDROP") }}</div>
+        <Icon name="ArrowRight" />
+        <CoinAmount :amount="tokensStore.getAirdropPool" :show-denom="true" style="font-weight: bold"/>
+      </div>-->
   </div>
+  </div>
+  <div style=" height: 100%; width:100% ;max-width:350px;margin-left: auto;
+  margin-right: auto " ref="poolsRef">
+    <ShadowedSvgChart id="poolschartdiv" >
+      <v-chart :option="option" autoresize />
+      <C4EIcon icon="c4e-circle" class="inside" :size="poolsRef.clientWidth/3"/>
+    </ShadowedSvgChart>
+  </div>
+</div>
 </template>
 
 <script setup lang="ts">
@@ -54,38 +54,38 @@ import C4EIcon from "../commons/C4EIcon.vue";
 import CoinAmount from "../commons/CoinAmount.vue";
 import { useConfigurationStore } from "@/store/configuration.store";
 use([
-  SVGRenderer,
-  PieChart,
-  TitleComponent,
-  TooltipComponent,
-  LegendComponent
+SVGRenderer,
+PieChart,
+TitleComponent,
+TooltipComponent,
+LegendComponent
 ]);
 
 const tokensStore = useTokensStore();
 const poolsRef = ref(0);
 const communityPool = computed(() => {
-  return useConfigurationStore().config.getConvertedAmount(tokensStore.getCommunityPool.amount);
+return useConfigurationStore().config.getConvertedAmount(tokensStore.getCommunityPool.amount);
 });
 
 const strategicReversePool = computed(() => {
-  return useConfigurationStore().config.getConvertedAmount(tokensStore.getStrategicReversePool.amount);
+return useConfigurationStore().config.getConvertedAmount(tokensStore.getStrategicReversePool.amount);
 });
 
 
 const airdropPool = computed(() => {
-  return useConfigurationStore().config.getConvertedAmount(tokensStore.getAirdropPool.amount);
+return useConfigurationStore().config.getConvertedAmount(tokensStore.getAirdropPool.amount);
 });
 
 const totalSupply = computed(() => {
-  return useConfigurationStore().config.getConvertedAmount(tokensStore.getTotalSupply.amount);
+return useConfigurationStore().config.getConvertedAmount(tokensStore.getTotalSupply.amount);
 });
 
 const remainingTokens = computed(() => {
-  return useConfigurationStore().config.getConvertedAmount(tokensStore.getRemainingTokens.amount);
+return useConfigurationStore().config.getConvertedAmount(tokensStore.getRemainingTokens.amount);
 });
 
 const option = computed(() => {
-  return createDashboardPoolsChartData(remainingTokens.value, communityPool.value, strategicReversePool.value, airdropPool.value, totalSupply.value);
+return createDashboardPoolsChartData(remainingTokens.value, communityPool.value, strategicReversePool.value, airdropPool.value, totalSupply.value);
 });
 
 
@@ -93,53 +93,53 @@ const option = computed(() => {
 
 <style scoped lang="scss">
 #poolschartdiv {
-  width: 100%;
-  height: 100%;
-  // margin-bottom: -30px;
-  // margin-left: -10px;
-  // background: transparent url("@/assets/logo.png") no-repeat center ;
-  // background-size: 50px;
+width: 100%;
+height: 100%;
+// margin-bottom: -30px;
+// margin-left: -10px;
+// background: transparent url("@/assets/logo.png") no-repeat center ;
+// background-size: 50px;
 position: relative;
-  .inside{
-    width: 40%;
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      margin:auto;
-      text-align: center;
-      vertical-align: middle;
-      left: 0;
-      right: 0;
+.inside{
+  width: 40%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin:auto;
+    text-align: center;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
 
-    }
+  }
 
 }
 
 @media screen and (max-width: 1150px) {
-  #poolschartdiv {
-    height: 350px;
-    width: 100%;
-    align-self: center;
+#poolschartdiv {
+  height: 350px;
+  width: 100%;
+  align-self: center;
 
-    .inside{
-      width: 40%;
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      margin:auto;
-      text-align: center;
-      vertical-align: middle;
-      left: 0;
-      right: 0;
+  .inside{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin:auto;
+    text-align: center;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
 
-    }
   }
+}
 }
 
 .c4e-icon {
-  color: #27697F;
+color: #27697F;
 }
 
 </style>

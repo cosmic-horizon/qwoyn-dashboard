@@ -23,8 +23,7 @@ export function createDashboardPoolsChartData(remainingTokens: number | BigDecim
     [
       { value: communityPool, name: i18n.global.t('DASHBOARD_VIEW.COMMUNITY_POOL'), color: communityPoolColor },
       { value: remainingTokens, name: i18n.global.t('DASHBOARD_VIEW.REMAINING_TOKENS'), color: remainingTokensColor },
-      { value: strategicReversePool, name: i18n.global.t('DASHBOARD_VIEW.STRATEGIC_REVERSE_POOL'), color: strategicReversePoolColor },
-      { value: airdropPool, name: i18n.global.t('DASHBOARD_VIEW.AIRDROP'), color: airdropPoolColor }
+      { value: strategicReversePool, name: i18n.global.t('DASHBOARD_VIEW.STRATEGIC_REVERSE_POOL'), color: strategicReversePoolColor }
     ], precision
   );
 }
