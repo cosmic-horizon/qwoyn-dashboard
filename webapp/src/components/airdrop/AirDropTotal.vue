@@ -73,7 +73,7 @@
             <img v-svg-inline class="icon airDropTotal__footerIcon" src="@/assets/svg/social_media/medium.svg" alt="Medium"/>
           </a>
           <a href="https://c4e.io" target="_blank" class="airDropTotal__footerIcon">
-            <img v-svg-inline class="icon airDropTotal__footerIcon" src="@/assets/svg/social_media/c4e.svg" alt="c4e logo"/>
+            <img v-svg-inline class="icon airDropTotal__footerIcon" src="@/assets/svg/social_media/qwoyn.svg" alt="qwoyn logo"/>
           </a>
         </div>
       </div>
