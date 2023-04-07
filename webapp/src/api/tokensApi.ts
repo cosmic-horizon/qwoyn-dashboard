@@ -14,7 +14,6 @@ import {findByDenomAndMapDecCoin, mapCoin} from "@/models/mapper/common.mapper";
 import queries from "./queries";
 import {formatString} from "@/utils/string-formatter";
 import {BlockchainApiErrorData} from "@/models/blockchain/common";
-import { Vestings } from "@/models/blockchain/c4e.vesting";
 import {DistributorParamsResponse} from "@/models/blockchain/distributorParams";
 import {mapDistributorParameters} from "@/models/mapper/distributor.parameters.mapper";
 
@@ -27,7 +26,6 @@ export class TokensApi extends BaseApi {
   private STAKING_POOL_URL = queries.blockchain.STAKING_POOL_URL;
   private TOTAL_SUPPLY_URL = queries.blockchain.TOTAL_SUPPLY_URL;
   private COMMUNITY_POOL_URL = queries.blockchain.COMMUNITY_POOL_URL;
-  private VESTINGS_SUM_URL = queries.blockchain.VESTINGS_SUM_URL;
   private DISTRIBUTOR_PARAMS_URL = queries.blockchain.DISTRIBUTOR_PARAMS_URL;
 
   public async fetchStakingPool(lockscreen: boolean): Promise<RequestResponse<StakingPool, ErrorData<BlockchainApiErrorData>>>{
@@ -59,16 +57,6 @@ export class TokensApi extends BaseApi {
       mapData, lockscreen, null, 'fetchCommunityPoolByDenom - ');
   }
 
-  public async fetchVestingLockedNotDelegated(lockscreen: boolean): Promise<RequestResponse<bigint, ErrorData<BlockchainApiErrorData>>> {
-    const mapData = (bcData: Vestings | undefined) => {
-      if (bcData && bcData.vesting_all_amount && bcData.delegated_vesting_amount) {
-        return BigInt(bcData.vesting_all_amount) - BigInt(bcData.delegated_vesting_amount);
-      }
-      return 0n;
-    };
-    return  await this.axiosGetBlockchainApiCall(this.VESTINGS_SUM_URL,
-      mapData, lockscreen, null, 'fetchVestingLockedNotDelegated - ');
-  }
   public async fetchShareParameter(lockscreen: boolean): Promise<RequestResponse<number, ErrorData<BlockchainApiErrorData>>> {
     const mapData = (bcData: DistributorParamsResponse | undefined) => {return mapDistributorParameters(bcData?.params);};
     return  await this.axiosGetBlockchainApiCall(this.DISTRIBUTOR_PARAMS_URL,
