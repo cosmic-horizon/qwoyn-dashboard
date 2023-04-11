@@ -2,7 +2,7 @@
   "Mainnet": {
     "bcApiURL": "https://api.higgs-boson.qwoyn.studio/",
     "bcRpcURL": "https://rpc.higgs-boson.qwoyn.studio/",
-    "hasuraURL": "https://hasura.c4e.io/v1/graphql",
+    "hasuraURL": "https://qwoyn.hasura.app/v1/graphql",
     "keybaseURL": "https://keybase.io",
     "stakingPageURL": "https://dashboard.qwoyn.studio/staking",
     "addressPrefix": "qwoyn",
