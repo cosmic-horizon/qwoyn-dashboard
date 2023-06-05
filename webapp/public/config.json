@@ -1,7 +1,7 @@
 {
   "Mainnet": {
-    "bcApiURL": "https://api.qwoyn-rc.qwoyn.studio/",
-    "bcRpcURL": "https://rpc.qwoyn-rc.qwoyn.studio/",
+    "bcApiURL": "http://144.202.95.96:26657",
+    "bcRpcURL": "http://144.202.95.96:1317",
     "hasuraURL": "https://hasura.c4e.io/v1/graphql",
     "keybaseURL": "https://keybase.io",
     "stakingPageURL": "https://dashboard.qwoyn.studio/staking",
