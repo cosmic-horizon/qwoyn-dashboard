@@ -1,7 +1,7 @@
 {
   "Mainnet": {
-    "bcApiURL": "http://144.202.95.96:26657",
-    "bcRpcURL": "http://144.202.95.96:1317",
+    "bcApiURL": "https://api.qwoyn.studio/",
+    "bcRpcURL": "https://rpc.qwoyn.studio/",
     "hasuraURL": "https://hasura.c4e.io/v1/graphql",
     "keybaseURL": "https://keybase.io",
     "stakingPageURL": "https://dashboard.qwoyn.studio/staking",
@@ -9,9 +9,9 @@
     "stakingDenom": "uqwoyn",
     "strategicPoolAddress": "qwoyn1wpgehcm8zl0n9znla6ttjmwrxnkn6ccmzwcuu3",
     "airdropPoolAddress": "qwoyn1wpgehcm8zl0n9znla6ttjmwrxnkn6ccmzwcuu3",
-    "chainId": "qwoyn-rc-1",
-    "networkName": "Qwoyn RC(Testnet)",
-    "keplrNetworkName": "Qwoyn-RC",
+    "chainId": "qwoyn1",
+    "networkName": "Qwoyn Network",
+    "keplrNetworkName": "Qwoyn",
     "queries": {
       "STAKING_POOL_URL": "/cosmos/staking/v1beta1/pool",
       "TOTAL_SUPPLY_URL": "/cosmos/bank/v1beta1/supply/{denom}",
