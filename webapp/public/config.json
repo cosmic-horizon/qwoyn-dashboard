@@ -1,6 +1,6 @@
 {
   "Mainnet": {
-    "bcApiURL": "https://api.qwoyn.studio",
+    "bcApiURL": "https://qwoyn-rest.staketab.org",
     "bcRpcURL": "https://rpc.qwoyn.studio",
     "hasuraURL": "https://hasura.c4e.io/v1/graphql",
     "keybaseURL": "https://keybase.io",
