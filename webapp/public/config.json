@@ -9,7 +9,7 @@
     "stakingDenom": "uqwoyn",
     "strategicPoolAddress": "qwoyn1wpgehcm8zl0n9znla6ttjmwrxnkn6ccmzwcuu3",
     "airdropPoolAddress": "qwoyn1wpgehcm8zl0n9znla6ttjmwrxnkn6ccmzwcuu3",
-    "chainId": "qwoyn1",
+    "chainId": "qwoyn-1",
     "networkName": "Qwoyn Network",
     "keplrNetworkName": "Qwoyn",
     "queries": {
