@@ -58,9 +58,9 @@
     "validatorsDataRefreshTimeout":600000,
     "accountDataRefreshTimeout": 90000,
     "proposalsPageLimit": 50,
-    "explorerUrl": "https://explorer.c4e.io",
-    "explorerAccount": "https://explorer.c4e.io/accounts/",
-    "explorerTx": "https://explorer.c4e.io/transactions/",
+    "explorerUrl": "https://explorer.theamsolutions.info/QWOYN-MAIN",
+    "explorerAccount": "https://explorer.theamsolutions.info/QWOYN-MAIN/account/",
+    "explorerTx": "https://explorer.theamsolutions.info/QWOYN-MAIN/block",
     "isMainNetwork": true,
     "airdropBaseURL": "https://airdrop.c4e.io/",
     "proposalVotingRefreshTimeout": 30000
